@@ -1,15 +1,13 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:teacher_attendance/data_binding.dart';
 import 'package:teacher_attendance/Home%20Page/UI/home_page.dart';
-import 'package:teacher_attendance/Home%20Page/HomeScreen.dart';
+import 'package:teacher_attendance/Home%20Page/UI/HomeScreen.dart';
 import 'package:teacher_attendance/widget/customLoader.dart';
 import 'Login Page/UI/login_page.dart';
 import 'constdata/global_data.dart';
-import 'Home Page/HomeScreen.dart';
 
 late List<CameraDescription> cameras;
 
@@ -46,10 +44,10 @@ class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
-  _HomePageState createState() => _HomePageState();
+  HomePageState createState() => HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class HomePageState extends State<HomePage> {
   late bool? repeat = false;
 
   @override

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../registration page/RecognitionScreen.dart';
-import '../registration page/RegistrationScreen.dart';
+import '../../registration page/RecognitionScreen.dart';
+import '../../registration page/RegistrationScreen.dart';
 
 
 class HomeScreen extends StatefulWidget {
