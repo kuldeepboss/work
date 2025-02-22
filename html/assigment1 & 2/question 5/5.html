@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for additional styling */
+        body {
+            padding-top: 50px;
+        }
+        .product-card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Shopping Mall Information -->
+        <div class="jumbotron text-center">
+            <h1>Welcome to Our Shopping Mall</h1>
+            <p>Your one-stop destination for all your shopping needs!</p>
+        </div>
+
+        <!-- Product Entry Form -->
+        <div class="card mb-4">
+            <div class="card-header">Add New Product</div>
+            <div class="card-body">
+                <form id="productForm">
+                    <div class="form-group">
+                        <label for="productName">Product Name:</label>
+                        <input type="text" class="form-control" id="productName" name="productName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productDescription">Description:</label>
+                        <textarea class="form-control" id="productDescription" name="productDescription" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="productPrice">Price:</label>
+                        <input type="number" class="form-control" id="productPrice" name="productPrice" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productImage">Product Image URL:</label>
+                        <input type="url" class="form-control" id="productImage" name="productImage" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Product</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Display Products -->
+        <div id="productList" class="row">
+            <!-- Dynamic Product Cards will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for Handling Form Submission -->
+    <script>
+        document.getElementById('productForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+
+            // Get form values
+            const productName = document.getElementById('productName').value;
+            const productDescription = document.getElementById('productDescription').value;
+            const productPrice = document.getElementById('productPrice').value;
+            const productImage = document.getElementById('productImage').value;
+
+            // Create product card
+            const productCard = `
+                <div class="col-md-4 product-card">
+                    <div class="card">
+                        <img src="${productImage}" class="card-img-top" alt="${productName}">
+                        <div class="card-body">
+                            <h5 class="card-title">${productName}</h5>
+                            <p class="card-text">${productDescription}</p>
+                            <p class="card-text"><strong>Price: $${productPrice}</strong></p>
+                        </div>
+                    </div>
+                </div>
+            `
+
+            // Insert the product card into the product list
+            document.getElementById('productList').innerHTML += productCard;
+
+            // Reset the form
+            document.getElementById('productForm').reset();
+        });
+    </script>
+</body>
+</html>

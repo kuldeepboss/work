@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="first.css"?>
+<Doctors>
+    <Doctor>
+        <Doctor_Id>1001</Doctor_Id>
+        <Doctor_Name>Dr.vk boss</Doctor_Name>
+        <Doctor_ContactNo>7016688687</Doctor_ContactNo>
+        <Doctor_Specialization>Cardiology</Doctor_Specialization>
+    </Doctor>
+    <Doctor>
+        <Doctor_Id>1002</Doctor_Id>
+        <Doctor_Name>Dr. vora darshan</Doctor_Name>
+        <Doctor_ContactNo>9316377501</Doctor_ContactNo>
+        <Doctor_Specialization>Neurology</Doctor_Specialization>
+    </Doctor>
+    <Doctor>
+        <Doctor_Id>1003</Doctor_Id>
+        <Doctor_Name>Dr. ambaliya rishi</Doctor_Name>
+        <Doctor_ContactNo></Doctor_ContactNo>
+        <Doctor_Specialization>Pediatrics</Doctor_Specialization>
+    </Doctor>
+    <Doctor>
+        <Doctor_Id>1004</Doctor_Id>
+        <Doctor_Name>Dr. vr sahil</Doctor_Name>
+        <Doctor_ContactNo>7046427245</Doctor_ContactNo>
+        <Doctor_Specialization>Pediatrics</Doctor_Specialization>
+    </Doctor>
+</Doctors>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualification Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card mt-5">
+            <div class="card-header bg-primary text-white">
+                <h4>Qualification Details</h4>
+            </div>
+            <div class="card-body">
+                <form id="qualificationForm" novalidate action="qualification.html">
+                    <div class="form-group">
+                        <label for="employeeId">Employee ID</label>
+                        <input type="text" class="form-control" id="employeeId" name="employeeId" required pattern="\d+">
+                        <div class="invalid-feedback">Please enter a valid Employee ID.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="highestQualification">Highest Qualification</label>
+                        <input type="text" class="form-control" id="highestQualification" name="highestQualification" required>
+                        <div class="invalid-feedback">Please enter the highest qualification.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="university">University/Institute</label>
+                        <input type="text" class="form-control" id="university" name="university" required>
+                        <div class="invalid-feedback">Please enter the name of the university or institute.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="yearOfPassing">Year of Passing</label>
+                        <input type="number" class="form-control" id="yearOfPassing" name="yearOfPassing" required min="1900" max="2024">
+                        <div class="invalid-feedback">Please enter a valid year of passing.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Qualification</button>
+                </form>
+                <div class="botton-link"> 
+                    don't have an account?
+                    <a href="departments.html">department</a>"
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('qualificationForm').addEventListener('submit', function(event) {
+            var form = this;
+            var employeeId = document.getElementById('employeeId');
+            var highestQualification = document.getElementById('highestQualification');
+            var university = document.getElementById('university');
+            var yearOfPassing = document.getElementById('yearOfPassing');
+            var isValid = true;
+
+            // Employee ID validation
+            if (!employeeId.value.match(/^\d+$/)) {
+                employeeId.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                employeeId.classList.remove('is-invalid');
+            }
+
+            // Highest Qualification validation
+            if (highestQualification.value.trim() === '') {
+                highestQualification.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                highestQualification.classList.remove('is-invalid');
+            }
+
+            // University validation
+            if (university.value.trim() === '') {
+                university.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                university.classList.remove('is-invalid');
+            }
+
+            // Year of Passing validation
+            if (!yearOfPassing.value || yearOfPassing.value < 1900 || yearOfPassing.value > 2024) {
+                yearOfPassing.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                yearOfPassing.classList.remove('is-invalid');
+            }
+
+            // Prevent form submission if invalid
+            if (!isValid) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+        });
+    </script>
+</body>
+</html>

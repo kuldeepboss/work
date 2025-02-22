@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+        .login-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-form {
+            margin-top: 20px;
+        }
+        .username-input,
+        .password-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .login-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form class="login-form">
+            <input type="text" id="username" class="username-input" placeholder="Username">
+            <input type="password" id="password" class="password-input" placeholder="Password">
+            <button type="button" class="login-button">Login</button>
+        </form>
+
+        <p class="toggle-form" onclick="toggleForms()">Already have an account? Login here</p>
+    </div>
+
+    <script>
+        // Toggle function placeholder (You can replace it with your logic)
+        function toggleForms() {
+            alert("Toggle function triggered! Implement form switch logic.");
+        }
+
+        // Handling the login button click event
+        document.querySelector('.login-button').addEventListener('click', function(event) {
+            event.preventDefault();  // Prevent form submission
+
+            // Retrieve the entered username and password
+            let username = document.querySelector('#username').value;
+            let password = document.querySelector('#password').value;
+
+            // You can perform validation or send these values to a backend server here
+            console.log("Username: ", username);
+            console.log("Password: ", password);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+Employees
+{
+display: block;
+margin:10px;
+}
+Employee
+{
+display: block;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+padding: 10px;
+background-color: Thistle;
+}
+EmpNo, Name, Department, ManagerName, Designation
+{
+display: block;
+margin-bottom: 20px;
+}
+EmpNo::before
+{
+content: "Employee No: ";
+}
+Name::before
+{
+content: "Name: ";
+}
+Department::before
+{
+content: "Department: ";
+}
+ManagerName::before
+{
+content: "Manager Name: ";
+}
+Designation::before
+{
+content: "Designation: ";
+}
+ProjectAssign
+{
+display: block;
+margin-bottom: 10px;
+}
+Project
+{
+display: block;
+margin-bottom: 5px;
+}
+ProjName::before
+{
+content:"Project: ";
+}

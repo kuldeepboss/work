@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet text="text/css" href="six.css"?>
+<EmployeeStudentData>
+ <Employee>
+ <Emp_no>01</Emp_no>
+ <Name>darshan</Name>
+ <Department>Engineering</Department>
+ <Manager_Name>kuldeep</Manager_Name>
+ <Project_Assigned>
+ <Proj_1>*Project Alpha</Proj_1>
+ <Proj_2>*Project Beta</Proj_2>
+ <Proj_3>*Project Gamma</Proj_3>
+ </Project_Assigned>
+ <Designation>Software Engineer</Designation>
+ </Employee>
+ <Employee>
+ <Emp_no>02</Emp_no>
+ <Name>rishi</Name>
+ <Department>HR</Department>
+ <Manager_Name>varj</Manager_Name>
+ <Project_Assigned>
+ <Proj_1>*Project Delta</Proj_1>
+ <Proj_2>*Project Epsilon</Proj_2>
+ <Proj_3>*Project Zeta</Proj_3>
+ </Project_Assigned>
+ <Designation>HR Manager</Designation>
+ </Employee>
+ </EmployeeStudentData>

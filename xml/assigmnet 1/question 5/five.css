@@ -1,0 +1,36 @@
+Results {
+    display: block;
+    margin: 20px;
+   }
+   Result {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color:LightSkyBlue;
+   }
+   RollNo, Name, Marks, Rank {
+    display: block;
+    margin-bottom: 10px;
+   }
+   RollNo::before {
+    content: "Roll No: ";
+   }
+   Name::before {
+    content: "Name: ";
+   }
+   Marks::before {
+    content: "Marks: ";
+   }
+   Rank::before {
+    content: "Rank: ";
+   }
+   Result[Rank="1"] {
+    background-color: #C6F4D6; /* Green for 1st rank */
+   }
+   Result[Rank="2"] {
+    background-color: #F7D2C4; /* Silver for 2nd rank */
+   }
+   Result[Rank="3"] {
+    background-color: #FFD700; /* Bronze for 3rd rank */
+   }

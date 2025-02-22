@@ -1,0 +1,35 @@
+Doctors {
+    display: block;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+Doctor {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+Doctor_Id {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+Doctor_Name {
+    display: block;
+    font-size: 1.2em;
+    color: #0066cc;
+    margin-bottom: 5px;
+}
+Doctor_ContactNo {
+    display: block;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+Doctor_Specialization {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}

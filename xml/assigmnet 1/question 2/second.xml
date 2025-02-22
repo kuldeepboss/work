@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="second.css" type="text/css"?>
+<Student>
+    <StudentName>vanani kuldeep</StudentName>
+    <PersonalInfo>
+        <Address>Shree Sai Villa Residency Isanpur Gam, Olpad, Surat - 394540 (Olpad Road)</Address>
+        <Birthdate>2006-01-14</Birthdate>
+        <Gender>Male</Gender>
+        <MobileNo>7016688687</MobileNo>
+    </PersonalInfo>
+    <Result>
+        <Total>450</Total>
+        <Percentage>90</Percentage>
+        <Grade>A</Grade>
+    </Result>
+</Student>

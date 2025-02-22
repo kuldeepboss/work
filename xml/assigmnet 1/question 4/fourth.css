@@ -1,0 +1,30 @@
+Books {
+    display: block;
+    margin: 20px;
+   }
+   Book {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color:BurlyWood;
+   }
+   Book[title]::before {
+    content: attr(title);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+   }
+   Author, Year, Publisher {
+    display: block;
+    margin-bottom: 10px;
+   }
+   Author::before {
+    content: "Author: ";
+   }
+   Year::before {
+    content: "Year: ";
+   }
+   Publisher::before {
+    content: "Publisher: ";
+   }

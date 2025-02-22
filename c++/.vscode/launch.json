@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/kv/kuldeep/c++",
-      "program": "c:/kv/kuldeep/c++/build/Debug/outDebug",
+      "cwd": "c:/kv/kuldeep/work/c++",
+      "program": "c:/kv/kuldeep/work/c++/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

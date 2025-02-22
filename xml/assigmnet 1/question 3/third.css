@@ -1,0 +1,46 @@
+OrderDetails
+{
+ font-family: Arial, sans-serif;
+ display: block;
+ padding: 20px;
+ background-color:gray;
+ border: 7px solid #ccc;
+}
+Order
+{
+ display: block;
+ margin-bottom: 10px;
+ padding: 15px;
+ border: 1px solid #4caf50;
+ background-color:#e8f5e9;
+ border-radius: 8px;
+}
+Order_Number,
+Order_Date,
+Order_Amount
+{
+ display: block;
+ font-weight: bold;
+ margin: px 0;
+ color: #2e7d32;
+}
+Items
+{
+ margin-top: 10px;
+ padding: 10px;
+ background-color: #e3f2fd;
+ border-left: 5px solid #1e88e5;
+}
+Item_Name
+{
+ display: block;
+ font-weight: bold;
+ color: #1565c0;
+ margin-bottom: 10px;
+}
+Price,Quantity
+{
+ display: block;
+ font-size: 0.5em;
+ color: #424242;
+}

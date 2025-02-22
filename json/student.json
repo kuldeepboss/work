@@ -1,0 +1,39 @@
+{
+    "students": [
+      {
+        "name":"vanani kuldeep",
+        "address": "191 saivila surat",
+        "birthdate": "2006-01-14",
+        "gender": "male",
+        "mobile_no": "7016688687"
+      },
+      {
+        "name": "vora darshan",
+        "address": "192 saivila surat",
+        "birthdate": "2006-06-10",
+        "gender": "Male",
+        "mobile_no": "8907898767"
+      },
+      {
+        "name": "abaliya rishi ",
+        "address": "180 saivila surat",
+        "birthdate": "2004-08-19",
+        "gender": "Male",
+        "mobile_no": "9089876787"
+      },
+      {
+        "name": "patel varj",
+        "address": "178 saivila surat",
+        "birthdate": "2007-02-10",
+        "gender": "male",
+        "mobile_no": "8979098977"
+      },
+      {
+        "name": "Variya sahil",
+        "address": "185 Sai vila surat",
+        "birthdate": "2005-11-30",
+        "gender": "Male",
+        "mobile_no": "8798767890"
+      }
+    ]
+  }
